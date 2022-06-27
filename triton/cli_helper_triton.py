@@ -132,7 +132,7 @@ if __name__ == "__main__":
     if prior_resolution:
         cmd += f"--resolution {prior_resolution} "
 
-    cmd += f"--pretrained-vae rave_{name}.ts "
+    cmd += f"--pretrained-vae ../rave_{name}.ts "
     prep_prior = path.join(preprocessed, name, "prior")
     cmd += f"--preprocessed {prep_prior} "
     cmd += f"--wav {data} "
